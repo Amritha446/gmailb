@@ -1,6 +1,18 @@
 .fixdNav{
   	background-color:#eaf1fb;
   	width:7%;
+        height:700px;
+}
+body{
+	overflow:hidden;
+}
+.overflow{
+	overflow-x:hidden;
+	overflow-y:scroll;
+  	height:85vh;
+}
+.header,.active{
+	background-color:#eaf1fb;
 }
 .firstNav {
 	background: #eaf1fb;
@@ -10,11 +22,7 @@
 		
 	border-radius: 50%;
         margin-left:25px;
-        
-}
-
-.toggleDiv:hover {
-	background-color: #c4c7c5;
+        margin-top:10px;
 }
 
 .iconBox {
@@ -22,6 +30,7 @@
 	width:40px;
 	margin-left:25px;
 	border-radius: 50%;
+     	margin-top:20px;
 }
 
 .iconImg {
@@ -40,10 +49,6 @@
 	
 }
 
-.iconBox:hover {
-	background-color: #d3e3fd;
-}
-
 .labelSection {
 	height: 25px;
 }
@@ -57,8 +62,8 @@
 	width: 20px;
 }
 .secnavimg{
-        height:20px;
-	width:20px;
+        height:17px;
+	width:17px;
 }
 
 .main {
@@ -76,14 +81,14 @@
 }
 
 .mainLogo {
-	width: 30px;
-	height: 25px;
+	width: 40px;
+	height:30px;
 }
 
 .searchBar {
 	background: white;
 	height: 45px;
-	width: 620px;
+	width: 40%;
 	border-radius: 20px;
 	
 	background: #e9eef6;
@@ -110,12 +115,15 @@
 .searchLogo{
 	height: 25px;
 	width: 25px;
+	border-radius:50%;
+
 }
 .searchLogo1 {
 	height: 20px;
 	width: 20px;
 	border-radius:50%;
 }
+
 
 .activeSection {
 	background: white;
@@ -124,21 +132,27 @@
 	width: 100px;
 	background: #e9eef6;
 }
-
-
+.mailBox: hover{
+	background-color:#f0f4f9;
+}
 
 .activeText {
 	font-size: 12px;
 }
 
-.activeLogo {
-	
+.secondnavBox1:hover {
+	background-color: #d3e3fd;
+}
+
+.secondnavBox{
+	background-color: #d3e3fd;
 }
 
 .iconHeader {
-	height: 30px;
-	width: 30px;
+	height: 20px;
+	width: 20px;
 	background: transparent;
+	border-radius:50%;	
 }
 
 
@@ -152,8 +166,8 @@
 }
 
 .techLogo {
-	height: 35px;
-	width: 80px;
+	height: 45px;
+	width: 90px;
 	background: white;
 }
 
@@ -162,7 +176,22 @@
 	height: 30px;
 	width: 30px;
 }
+.composeText{
+	font-size:11px;
+}
 .composeBtn{
         background-color:#c2e7ff;
-  	width:60%;
+  	width:75%;
+}
+.mailText1,mailText3{
+	font-size:14px;
+}
+.mailText2{
+	font-size:14px;
+}
+.mainRow1{
+	background-color:white;
+}
+.mailDate{
+	font-size:12px;
 }

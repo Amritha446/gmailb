@@ -11,8 +11,8 @@
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="d-flex ">
-     <div class="fixdNav">
+<div class="d-flex">
+     <div class="d-none d-lg-block fixdNav">
            <div class="toggleDiv">
             	<img src="images\toggle.png" alt="inbox" class="iconImg1">   
            </div>
@@ -37,77 +37,86 @@
      </div>
   <div class="ms-3 w-100 m-0">
      <div class="headerSection row">
-         <div class="col-2 mainLogo p-0 ">
-            <a href="#"><img src="images\4.png" alt="mail"></a>
+         <div class="col-2 mainLogo p-0 mt-1">
+            <a href="#">
+		<img src="images\4.png" alt="mail">
+	    </a>
          </div>
 
-         <div class="col-6 border border-1 rounded-pill d-flex p-0 mt-1 "> 
-                      <nav class="nav p-2">                        
-                           <div class="row">
+         <div class="col-xl-6 col-lg-5 col-md-4 d-md-flex border border-1 rounded-pill d-none mt-1 h-75 px-2 m-auto header "> 
+                      <nav class="nav p-2 w-100">  
+			<a class="link-offset-2 link-underline link-underline-opacity-0 w-100" href="#">                     
+                           <div class="row justify-content-between ">
                                <div class="col-md-1 searchGlass">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                </div>
-                               <div class="col-md-8 searchText">
+                               <div class="col-sm-8 d-md-block d-none searchText">
                                      Search
-                               </div>                              
-                               <div class="col-md-2 searchLogo">
+                               </div> 
+				                            
+                               <div class="col-md-2 d-md-block d-none searchLogo d-flex justify-content-end">
                                    <img src="images\filter.png" alt="filter" class="searchLogo">
                                </div>
+
                           </div>
+			</a>
                      </nav>                                      
                 </div>
 
-        <div class="col-1 border border-1 rounded-pill d-flex p-0 mt-1 p-2 ">
-                    <div class="row">
-                         <div class="col-md-1 bulletComp">
+        <div class="col-md-1 col-lg-1 col-xl-1 d-md-block d-none border border-1 rounded-pill mt-1 p-2 h-75 active">
+	       <a class="link-offset-2 link-underline link-underline-opacity-0" href="#">  
+                    <div class="d-flex justify-content-between">
+                         <div class="bulletComp">
                               <img src="images\bullet.jpg" alt="filter" class="searchLogo1">
                          </div>
-                         <div class="col-md-4 activeText me-1 mt-1">
+                         <div class="d-lg-block d-none activeText me-1 mt-1">
                                Active
                          </div>
-                         <div class="col-md-4 activeLogo mx-0">
+                         <div class="activeLogo mx-0 ">
                               <i class="fa-solid fa-angle-down"></i>
                          </div>
                    </div>
-               </div>
+	      </a>
+        </div>
 
-       <div class="col-2 d-flex mt-1 p-0 justify-content-evenly">
-                    <div class="col-md-3 iconHeader">            
+       <div class="col-xl-1 col-lg-1 col-md-2  d-md-flex d-none mb-2 p-0 justify-content-evenly ">
+		<button type="button" class="p-0 btn">          
                          <img src="images\4.jpg" alt="qs" class="iconHeader">
-                    </div>
-                    <div class="col-md-3 iconHeader">
+		</button>
+		<button type="button" class="p-0 btn">
                          <img src="images\5.jpg" alt="qs" class="iconHeader">
-                    </div>
-                    <div class="col-md-3 iconHeader">
+		</button>
+		<button type="button" class="p-0 btn">
                          <img src="images\6.jpg" alt="qs" class="iconHeader">
-                    </div>
-               </div>
+		</button>
+		
+      </div>
 
-      <div class="col-1 p-0 mt-1 mx-0 rounded ">
-                    
-                    <div class=" techLogo ms-3 ">
+      <div class="col-xl-1 col-md-2 col-lg-2 d-md-block d-none p-0 mt-1 mx-0 rounded ">
+		<button type="button" class="btn p-0">
+                    <div class=" techLogo ms-2 mb-1">
                          <img src="images\techlogo.png" alt="tech_logo" class="techLogo ">
                     </div>
-                    
+                </button> 
                     
       </div>
  </div>
       <div class="row ">
-           <div class="col-2">
-                <div class="d-flex rounded border border-1 composeBtn p-2  ">
+           <div class="col-md-2 d-md-block d-none">
+                <div class="d-flex rounded-4 border border-1 composeBtn py-2 px-4 ">
                      <div class="composeImg m-auto">
                            <img src="images\9.jpg" alt="compose_img" class="composeImg">
                      </div>
-                     <div class="composeText fs-10 m-auto">
+                     <div class="d-lg-block d-none composeText fs-10 m-auto">
                            Compose
                      </div>
                 </div>
                 
-                <div class="d-flex mt-2 rounded secondnavBox">
+                <div class="d-flex mt-2 rounded secondnavBox">		
                   <div class="secnavimg">
                      <img src="images\inbox.png" class="secnavimg">
                   </div>
-                  <div class="secnavText">
+                  <div class="secnavText ms-3">
                      Inbox
                   </div>
                </div>
@@ -116,7 +125,7 @@
                   <div class="secnavimg">
                      <img src="images\star.png" class="secnavimg">
                   </div>
-                  <div class="secnavText">
+                  <div class="secnavText ms-3">
                      Starred
                   </div>
                </div>
@@ -125,7 +134,7 @@
                   <div class="secnavimg">
                      <img src="images\clock.png" class="secnavimg">
                   </div>
-                  <div class="secnavText">
+                  <div class="secnavText ms-3">
                      Snoozed
                   </div>
                </div>
@@ -134,7 +143,7 @@
                   <div class="secnavimg">
                      <img src="images\sent.png" class="secnavimg">
                   </div>
-                  <div class="secnavText">
+                  <div class="secnavText ms-3">
                      Sent
                   </div>
                </div>
@@ -143,7 +152,7 @@
                   <div class="secnavimg">
                      <img src="images\draft.png" class="secnavimg">
                   </div>
-                  <div class="secnavText">
+                  <div class="secnavText ms-3">
                      Draft
                   </div>
                </div>
@@ -152,202 +161,467 @@
                   <div class="secnavIcon">
                      <i class="fa-solid fa-angle-down"></i>
                   </div>
-                  <div class="secnavText">
+                  <div class="secnavText ms-3">
                      More
                   </div>
                </div>
 		
-		<div class="d-flex mt-3 rounded labelText">
-                     Labels
-                     <div class="labelIcon ms-3">
-                          <img src="https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/black-24dp/1x/gm_add_black_24dp.png" alt="calender" class="labelIcon">
-                     </div>
+		<div class="d-flex mt-3 justify-content-between rounded labelText">
+			<div class="mt-2">
+                     		Labels
+			</div>
+			<button type="button" class="btn">
+                     		<div class="labelIcon  mb-2">
+                          		<img src="https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/black-24dp/1x/gm_add_black_24dp.png" alt="calender" class="labelIcon">
+                     		</div>
+			</button>
            	</div>
 	  </div>
-           <div class="col-10">
-                 <div class="d-flex border border-1 mt-2 mainRow1">
-               		<div class=" col-1 ms-1 mainheaderLogo1">
+           <div class="col-md-10 ">
+                 <div class="d-md-flex mt-3 mb-0 ms-2 d-none mainRow1">
+               		<div class="col-md-1 justify-content-evenly mainheaderLogo1 ms-3 px-1">
                   		<i class="fa-regular fa-square"></i>
-              
                   		<i class="fa-solid fa-sort-down"></i>
                		</div>
-               		<div class="col-1 mainheaderLogo3">
+               		<div class="col-2 mainheaderLogo3">
                   		<img src="images\refresh.jpg" class="mainheaderLogo3" alt="logo">
                		</div>
-               		<div class="col-1 mainheaderLogo4">
+               		<div class="col-2 mainheaderLogo4">
                  		 <i class="fa-solid fa-ellipsis-vertical"></i>
                		</div>
-               		<div class="col-7 mainText">
+               		<div class="col-4 mainText">
                   		<img src="images\text.jpg" class="mainText1" alt="text">
-              
+              		</div>
+			<div class="col-3 text-align-center mainLeftIcon">
                   		<img src="images\left.jpg" class="mainLeftIcon" alt="left">
-               
-                  		<img src="images\Right.jpg" class="mainRightIcon" alt="right">
+                  		<img src="images\Right.jpg" class="mainRightIcon" alt="right">	
                		</div>
             	</div>
-		<div class="d-flex border border-1 mailBox">
-                  	<div class="mail1Icon">
-                     		<i class="fa-regular fa-square"></i>
-                  	</div>
-                  	<div class="mail2Icon">
+ 	 	<div class="overflow">
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
                      		<i class="fa-regular fa-star"></i>
                   	</div>
-                  	<div class="mailText1">
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
                      		HR Techversant
                   	</div>
-                  	<div class="mailText2">
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
                      		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
                   	</div>
-                  	<div class="mailText3">
+                  	<div class="mailText3 d-md-none">
                      		Imp - Spam/Phishing Emails Alert...
                  	 </div>
-                  	<div class="mailDate">
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
                     		 1.30
                   	</div>
               	 </div>
-		<div class="d-flex border border-1 mailBox">
-                  	<div class="mail1Icon">
-                     		<i class="fa-regular fa-square"></i>
-                  	</div>
-                  	<div class="mail2Icon">
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
                      		<i class="fa-regular fa-star"></i>
                   	</div>
-                  	<div class="mailText1">
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
                      		HR Techversant
                   	</div>
-                  	<div class="mailText2">
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
                      		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
                   	</div>
-                  	<div class="mailText3">
+                  	<div class="mailText3 d-md-none">
                      		Imp - Spam/Phishing Emails Alert...
                  	 </div>
-                  	<div class="mailDate">
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
                     		 1.30
                   	</div>
               	 </div>
-		<div class="d-flex border border-1 mailBox">
-                  	<div class="mail1Icon">
-                     		<i class="fa-regular fa-square"></i>
-                  	</div>
-                  	<div class="mail2Icon">
+
+            	
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
                      		<i class="fa-regular fa-star"></i>
                   	</div>
-                  	<div class="mailText1">
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
                      		HR Techversant
                   	</div>
-                  	<div class="mailText2">
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
                      		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
                   	</div>
-                  	<div class="mailText3">
+                  	<div class="mailText3 d-md-none">
                      		Imp - Spam/Phishing Emails Alert...
                  	 </div>
-                  	<div class="mailDate">
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
                     		 1.30
                   	</div>
               	 </div>
-		<div class="d-flex border border-1 mailBox">
-                  	<div class="mail1Icon">
-                     		<i class="fa-regular fa-square"></i>
-                  	</div>
-                  	<div class="mail2Icon">
+
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
                      		<i class="fa-regular fa-star"></i>
                   	</div>
-                  	<div class="mailText1">
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
                      		HR Techversant
                   	</div>
-                  	<div class="mailText2">
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
                      		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
                   	</div>
-                  	<div class="mailText3">
+                  	<div class="mailText3 d-md-none">
                      		Imp - Spam/Phishing Emails Alert...
                  	 </div>
-                  	<div class="mailDate">
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
                     		 1.30
                   	</div>
               	 </div>
-		<div class="d-flex border border-1 mailBox">
-                  	<div class="mail1Icon">
-                     		<i class="fa-regular fa-square"></i>
-                  	</div>
-                  	<div class="mail2Icon">
+
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
                      		<i class="fa-regular fa-star"></i>
                   	</div>
-                  	<div class="mailText1">
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
                      		HR Techversant
                   	</div>
-                  	<div class="mailText2">
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
                      		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
                   	</div>
-                  	<div class="mailText3">
+                  	<div class="mailText3 d-md-none">
                      		Imp - Spam/Phishing Emails Alert...
                  	 </div>
-                  	<div class="mailDate">
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
                     		 1.30
                   	</div>
               	 </div>
-		<div class="d-flex border border-1 mailBox">
-                  	<div class="mail1Icon">
-                     		<i class="fa-regular fa-square"></i>
-                  	</div>
-                  	<div class="mail2Icon">
+
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
                      		<i class="fa-regular fa-star"></i>
                   	</div>
-                  	<div class="mailText1">
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
                      		HR Techversant
                   	</div>
-                  	<div class="mailText2">
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
                      		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
                   	</div>
-                  	<div class="mailText3">
+                  	<div class="mailText3 d-md-none">
                      		Imp - Spam/Phishing Emails Alert...
                  	 </div>
-                  	<div class="mailDate">
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
                     		 1.30
                   	</div>
               	 </div>
-		<div class="d-flex border border-1 mailBox">
-                  	<div class="mail1Icon">
-                     		<i class="fa-regular fa-square"></i>
-                  	</div>
-                  	<div class="mail2Icon">
+
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
                      		<i class="fa-regular fa-star"></i>
                   	</div>
-                  	<div class="mailText1">
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
                      		HR Techversant
                   	</div>
-                  	<div class="mailText2">
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
                      		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
                   	</div>
-                  	<div class="mailText3">
+                  	<div class="mailText3 d-md-none">
                      		Imp - Spam/Phishing Emails Alert...
                  	 </div>
-                  	<div class="mailDate">
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
                     		 1.30
                   	</div>
               	 </div>
-		<div class="d-flex border border-1 mailBox">
-                  	<div class="mail1Icon">
-                     		<i class="fa-regular fa-square"></i>
-                  	</div>
-                  	<div class="mail2Icon">
+
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
                      		<i class="fa-regular fa-star"></i>
                   	</div>
-                  	<div class="mailText1">
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
                      		HR Techversant
                   	</div>
-                  	<div class="mailText2">
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
                      		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
                   	</div>
-                  	<div class="mailText3">
+                  	<div class="mailText3 d-md-none">
                      		Imp - Spam/Phishing Emails Alert...
                  	 </div>
-                  	<div class="mailDate">
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
                     		 1.30
                   	</div>
               	 </div>
 
 
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
+                     		<i class="fa-regular fa-star"></i>
+                  	</div>
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
+                     		HR Techversant
+                  	</div>
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
+                     		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
+                  	</div>
+                  	<div class="mailText3 d-md-none">
+                     		Imp - Spam/Phishing Emails Alert...
+                 	 </div>
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
+                    		 1.30
+                  	</div>
+              	 </div>
 
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
+                     		<i class="fa-regular fa-star"></i>
+                  	</div>
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
+                     		HR Techversant
+                  	</div>
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
+                     		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
+                  	</div>
+                  	<div class="mailText3 d-md-none">
+                     		Imp - Spam/Phishing Emails Alert...
+                 	 </div>
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
+                    		 1.30
+                  	</div>
+              	 </div>
+
+
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
+                     		<i class="fa-regular fa-star"></i>
+                  	</div>
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
+                     		HR Techversant
+                  	</div>
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
+                     		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
+                  	</div>
+                  	<div class="mailText3 d-md-none">
+                     		Imp - Spam/Phishing Emails Alert...
+                 	 </div>
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
+                    		 1.30
+                  	</div>
+              	 </div>
+
+
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
+                     		<i class="fa-regular fa-star"></i>
+                  	</div>
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
+                     		HR Techversant
+                  	</div>
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
+                     		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
+                  	</div>
+                  	<div class="mailText3 d-md-none">
+                     		Imp - Spam/Phishing Emails Alert...
+                 	 </div>
+                  	<div class="mailDate col-sm-1 d-sm-block d-none">
+                    		 1.30
+                  	</div>
+              	 </div>
+
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
+                     		<i class="fa-regular fa-star"></i>
+                  	</div>
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
+                     		HR Techversant
+                  	</div>
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
+                     		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
+                  	</div>
+                  	<div class="mailText3 d-md-none">
+                     		Imp - Spam/Phishing Emails Alert...
+                 	 </div>
+                  	<div class="mailDate col-1 d-sm-block d-none">
+                    		 1.30
+                  	</div>
+              	 </div>
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
+                     		<i class="fa-regular fa-star"></i>
+                  	</div>
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
+                     		HR Techversant
+                  	</div>
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
+                     		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
+                  	</div>
+                  	<div class="mailText3 d-md-none">
+                     		Imp - Spam/Phishing Emails Alert...
+                 	 </div>
+                  	<div class="mailDate col-1 d-sm-block d-none">
+                    		 1.30
+                  	</div>
+              	 </div>
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
+                     		<i class="fa-regular fa-star"></i>
+                  	</div>
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
+                     		HR Techversant
+                  	</div>
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
+                     		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
+                  	</div>
+                  	<div class="mailText3 d-md-none">
+                     		Imp - Spam/Phishing Emails Alert...
+                 	 </div>
+                  	<div class="mailDate col-1 d-sm-block d-none">
+                    		 1.30
+                  	</div>
+              	 </div>
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
+                     		<i class="fa-regular fa-star"></i>
+                  	</div>
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
+                     		HR Techversant
+                  	</div>
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
+                     		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
+                  	</div>
+                  	<div class="mailText3 d-md-none">
+                     		Imp - Spam/Phishing Emails Alert...
+                 	 </div>
+                  	<div class="mailDate col-1 d-sm-block d-none">
+                    		 1.30
+                  	</div>
+              	 </div>
+		<div class="d-flex mailBox h-10 p-2 shadow bg-body-tertiary rounded">
+                  	<div class="mail1Icon col-md-1 d-md-flex justify-content-evenly d-none mx-1 ">             		
+                     		<i class="fa-regular fa-square"></i>      	
+                     		<i class="fa-regular fa-star"></i>
+                  	</div>
+			<div class="mail1Icon col-1 mx-1 d-md-none">
+				<i class="fa-regular fa-star"></i>	
+			</div>
+                  	<div class="mailText1 col-sm-2 d-sm-block d-none ">
+                     		HR Techversant
+                  	</div>
+			<div class="mailText1 col-2 d-sm-none fw-bold">
+                     		HR 
+                  	</div>
+                  	<div class="mailText2 col-md-8 d-md-block d-none">
+                     		Imp - Spam/Phishing Emails Alert.-Dear Techversans,We have noticed that Spam/Phishin...
+                  	</div>
+                  	<div class="mailText3 d-md-none">
+                     		Imp - Spam/Phishing Emails Alert...
+                 	 </div>
+                  	<div class="mailDate col-1 d-sm-block d-none">
+                    		 1.30
+                  	</div>
+              	 </div>
+		</div>
            </div>
       </div>
 </div>
