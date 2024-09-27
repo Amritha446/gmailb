@@ -1,47 +1,58 @@
-.fixdNav{
-  	background-color:#eaf1fb;
-  	width:7%;
+.fixdNav {
+	background-color: #eaf1fb;
+	width: 7%;
+	height: 700px;
 }
+
+body {
+	overflow: hidden;
+}
+
+.overflow {
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 85vh;
+}
+
+.header,
+.active {
+	background-color: #eaf1fb;
+}
+
 .firstNav {
 	background: #eaf1fb;
 }
 
 .toggleDiv {
-		
-	border-radius: 50%;
-        margin-left:25px;
-        
-}
 
-.toggleDiv:hover {
-	background-color: #c4c7c5;
+	border-radius: 50%;
+	margin-left: 25px;
+	margin-top: 10px;
 }
 
 .iconBox {
-	height:40px;
-	width:40px;
-	margin-left:25px;
+	height: 40px;
+	width: 40px;
+	margin-left: 25px;
 	border-radius: 50%;
+	margin-top: 20px;
 }
 
 .iconImg {
 	height: 25px;
-        width:25px;       
+	width: 25px;
 }
+
 .iconImg1 {
 	height: 25px;
-        width:25px;       
+	width: 25px;
 }
 
 .iconText {
 	font-size: .75rem;
 	letter-spacing: normal;
 	font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-	
-}
 
-.iconBox:hover {
-	background-color: #d3e3fd;
 }
 
 .labelSection {
@@ -56,9 +67,10 @@
 	height: 20px;
 	width: 20px;
 }
-.secnavimg{
-        height:20px;
-	width:20px;
+
+.secnavimg {
+	height: 17px;
+	width: 17px;
 }
 
 .main {
@@ -71,21 +83,21 @@
 }
 
 .headerSection {
-	width:100%;
+	width: 100%;
 	height: 55px;
 }
 
 .mainLogo {
-	width: 30px;
-	height: 25px;
+	width: 40px;
+	height: 30px;
 }
 
 .searchBar {
 	background: white;
 	height: 45px;
-	width: 620px;
+	width: 40%;
 	border-radius: 20px;
-	
+
 	background: #e9eef6;
 	text-decoration: none;
 }
@@ -93,52 +105,63 @@
 .searchGlass {
 	height: 22px;
 	width: 22px;
-	
+
 	border-radius: 50%;
 	color: black;
 }
 
 .searchText {
 	color: #747775;
-	font-sixe: 20px;	
+	font-sixe: 20px;
 }
 
 .searchText1 {
 	display: none;
 }
 
-.searchLogo{
+.searchLogo {
 	height: 25px;
 	width: 25px;
+	border-radius: 50%;
+
 }
+
 .searchLogo1 {
 	height: 20px;
 	width: 20px;
-	border-radius:50%;
+	border-radius: 50%;
 }
+
 
 .activeSection {
 	background: white;
 	height: 45px;
-	border-radius: 20px;	
+	border-radius: 20px;
 	width: 100px;
 	background: #e9eef6;
 }
 
-
+.mailBox: hover {
+	background-color: #f0f4f9;
+}
 
 .activeText {
 	font-size: 12px;
 }
 
-.activeLogo {
-	
+.secondnavBox1:hover {
+	background-color: #d3e3fd;
+}
+
+.secondnavBox {
+	background-color: #d3e3fd;
 }
 
 .iconHeader {
-	height: 30px;
-	width: 30px;
+	height: 20px;
+	width: 20px;
 	background: transparent;
+	border-radius: 50%;
 }
 
 
@@ -148,12 +171,12 @@
 	border-radius: 7px;
 	width: 125px;
 	border: 1px solid #dadce0;
-	
+
 }
 
 .techLogo {
-	height: 35px;
-	width: 80px;
+	height: 45px;
+	width: 90px;
 	background: white;
 }
 
@@ -162,7 +185,39 @@
 	height: 30px;
 	width: 30px;
 }
-.composeBtn{
-        background-color:#c2e7ff;
-  	width:60%;
+
+.composeText {
+	font-size: 11px;
+}
+
+.composeBtn {
+	background-color: #c2e7ff;
+	width: 75%;
+}
+
+.mailText1,
+mailText3 {
+	font-size: 14px;
+}
+
+.mailText2 {
+	font-size: 14px;
+}
+
+.mainRow1 {
+	background-color: white;
+}
+
+.mailDate {
+	font-size: 12px;
+}
+.mbText {
+	font-size:12px;
+}
+.mbSecond{
+	background-color:#f1f1f1;
+	border-bottem:1px solid #d8d8d8;
+}
+.mbThird{
+	border-bottem:1px solid #d8d8d8;
 }
